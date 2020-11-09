@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{610A5D38-243C-4DFF-8438-0749F14881CD}|Default">
+  <MonoDevelop.Ide.ItemProperties.forensicsTest PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="forensicsTest/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="forensicsTest/Views/Home/Index.cshtml" Line="10" Column="46" />
+      <File FileName="forensicsTest/Views/Home/_RecordsPartialView.cshtml" />
+      <File FileName="forensicsTest/Models/Websites.cs" />
+      <File FileName="forensicsTest/Mappers/WebsiteMap.cs" />
+      <File FileName="forensicsTest/Controllers/HomeController.cs" Line="30" Column="32" NotebookId="1" />
+      <File FileName="forensicsTest/Services/ICsvParserService.cs" NotebookId="1" />
+      <File FileName="forensicsTest/Services/CsvParserService.cs" NotebookId="1" />
+      <File FileName="forensicsTest/Views/Shared/_Layout.cshtml" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="forensicsTest" expanded="True">
+            <Node name="forensicsTest" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Mappers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

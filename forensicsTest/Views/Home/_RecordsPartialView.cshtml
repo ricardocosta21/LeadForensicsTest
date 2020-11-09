@@ -1,0 +1,40 @@
+﻿@model IEnumerable<forensicsTest.Models.Record>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Website)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasGoogle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ScanDuration)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Website)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HasGoogle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ScanDuration)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,80 @@
+﻿@model IEnumerable<forensicsTest.Models.WebsiteModel>
+@{
+    ViewData["Title"] = "Upload";
+}
+
+<form method="post" enctype="multipart/form-data" asp-controller="UploadFile" asp-action="Index">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Please select a file to upload:</p>
+            <input type="file" name="file" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Upload" />
+        </div>
+    </div>
+</form>
+
+<form method="post"  asp-controller="DeleteAll" asp-action="Index">
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="DeleteAll" />
+        </div>
+    </div>
+</form>
+
+<form method="post" asp-controller="ProcessAll" asp-action="Index">
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="ProcessAll" />
+        </div>
+    </div>
+</form>
+
+
+
+@{ if (Model.Count() != 0)
+    {
+        <h2>Websites</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Website)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Website)
+                        </td>
+                        <td>
+                            <form asp-action="Delete" method="post">
+                                <input type="hidden" name="name" value="@item.Name" />
+                                <button type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    }
+}
+
+
